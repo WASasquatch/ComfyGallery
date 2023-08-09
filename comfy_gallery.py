@@ -1251,7 +1251,7 @@ if __name__ == "__main__":
             <div id="logo-container">
                 <div class="header">
                         <p>
-                            <a class="logo-link" href="#home" title="Go to homepage"><span class="comfyui">ComfyUI</span><br>
+                            <a id="logo-link" class="logo-link" href="#home" title="Go to homepage"><span class="comfyui">ComfyUI</span><br>
                             C<span class="node-bullet">&#10687;</span>mfy<span style="font-weight:normal;">Gallery</span></a>
                         </p>
                 </div>
@@ -1304,7 +1304,8 @@ if __name__ == "__main__":
                 confirmButton = document.getElementById("del-confirm"),
                 abortButton = document.getElementById("del-abort"),
                 copyWorkflowBtn = document.getElementById("copy-workflow-btn"),
-                matchedContent = document.getElementById("matched-object");
+                matchedContent = document.getElementById("matched-object"),
+                logoLink = document.getElementById("logo-link")
                 
             let pathHistory = [],
                 selectedCategory,
@@ -1745,6 +1746,7 @@ if __name__ == "__main__":
             }
 
             window.addEventListener('hashchange', pageNavigation);
+            logoLink.addEventListener('click', pageNavigation)
 
             if ( window.location.hash === '' || window.location.hash ==='#home' ) {
                 var categories = [''' + ",".join('"' + os.path.basename(path) + '"' for path in IMAGE_PATHS) + '''];
