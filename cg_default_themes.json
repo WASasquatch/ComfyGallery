@@ -1,0 +1,167 @@
+{
+    "dark": {
+        "id": "dark",
+        "name": "Dark (Default)",
+        "colors": {
+            "node_slot": {
+                "CLIP": "#FFD500",
+                "CLIP_VISION": "#A8DADC",
+                "CLIP_VISION_OUTPUT": "#ad7452",
+                "CONDITIONING": "#FFA931",
+                "CONTROL_NET": "#6EE7B7",
+                "IMAGE": "#64B5F6",
+                "LATENT": "#FF9CF9",
+                "MASK": "#81C784",
+                "MODEL": "#B39DDB",
+                "STYLE_MODEL": "#C2FFAE",
+                "VAE": "#FF6E6E",
+                "TAESD": "#DCC274"
+            },
+            "litegraph_base": {
+                "BACKGROUND_IMAGE": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQBJREFUeNrs1rEKwjAUhlETUkj3vP9rdmr1Ysammk2w5wdxuLgcMHyptfawuZX4pJSWZTnfnu/lnIe/jNNxHHGNn//HNbbv+4dr6V+11uF527arU7+u63qfa/bnmh8sWLBgwYJlqRf8MEptXPBXJXa37BSl3ixYsGDBMliwFLyCV/DeLIMFCxYsWLBMwSt4Be/NggXLYMGCBUvBK3iNruC9WbBgwYJlsGApeAWv4L1ZBgsWLFiwYJmCV/AK3psFC5bBggULloJX8BpdwXuzYMGCBctgwVLwCl7Be7MMFixYsGDBsu8FH1FaSmExVfAxBa/gvVmwYMGCZbBg/W4vAQYA5tRF9QYlv/QAAAAASUVORK5CYII=",
+                "CLEAR_BACKGROUND_COLOR": "#222",
+                "NODE_TITLE_COLOR": "#999",
+                "NODE_SELECTED_TITLE_COLOR": "#FFF",
+                "NODE_TEXT_SIZE": 14,
+                "NODE_TEXT_COLOR": "#AAA",
+                "NODE_SUBTEXT_SIZE": 12,
+                "NODE_DEFAULT_COLOR": "#333",
+                "NODE_DEFAULT_BGCOLOR": "#353535",
+                "NODE_DEFAULT_BOXCOLOR": "#666",
+                "NODE_DEFAULT_SHAPE": "box",
+                "NODE_BOX_OUTLINE_COLOR": "#FFF",
+                "DEFAULT_SHADOW_COLOR": "rgba(0,0,0,0.5)",
+                "DEFAULT_GROUP_FONT": 24,
+                "WIDGET_BGCOLOR": "#222",
+                "WIDGET_OUTLINE_COLOR": "#666",
+                "WIDGET_TEXT_COLOR": "#DDD",
+                "WIDGET_SECONDARY_TEXT_COLOR": "#999",
+                "LINK_COLOR": "#9A9",
+                "EVENT_LINK_COLOR": "#A86",
+                "CONNECTING_LINK_COLOR": "#AFA"
+            },
+            "comfy_base": {
+                "fg-color": "#fff",
+                "bg-color": "#202020",
+                "comfy-menu-bg": "#353535",
+                "comfy-input-bg": "#222",
+                "input-text": "#ddd",
+                "descrip-text": "#999",
+                "drag-text": "#ccc",
+                "error-text": "#ff4444",
+                "border-color": "#4e4e4e",
+                "tr-even-bg-color": "#222",
+                "tr-odd-bg-color": "#353535"
+            }
+        }
+    },
+    "light": {
+        "id": "light",
+        "name": "Light",
+        "colors": {
+            "node_slot": {
+                "CLIP": "#FFA726",
+                "CLIP_VISION": "#5C6BC0",
+                "CLIP_VISION_OUTPUT": "#8D6E63",
+                "CONDITIONING": "#EF5350",
+                "CONTROL_NET": "#66BB6A",
+                "IMAGE": "#42A5F5",
+                "LATENT": "#AB47BC",
+                "MASK": "#9CCC65",
+                "MODEL": "#7E57C2",
+                "STYLE_MODEL": "#D4E157",
+                "VAE": "#FF7043"
+            },
+            "litegraph_base": {
+                "BACKGROUND_IMAGE": "data:image/gif;base64,R0lGODlhZABkALMAAAAAAP///+vr6+rq6ujo6Ofn5+bm5uXl5d3d3f///wAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAkALAAAAABkAGQAAAT/UMhJq7046827HkcoHkYxjgZhnGG6si5LqnIM0/fL4qwwIMAg0CAsEovBIxKhRDaNy2GUOX0KfVFrssrNdpdaqTeKBX+dZ+jYvEaTf+y4W66mC8PUdrE879f9d2mBeoNLfH+IhYBbhIx2jkiHiomQlGKPl4uZe3CaeZifnnijgkESBqipqqusra6vsLGys62SlZO4t7qbuby7CLa+wqGWxL3Gv3jByMOkjc2lw8vOoNSi0czAncXW3Njdx9Pf48/Z4Kbbx+fQ5evZ4u3k1fKR6cn03vHlp7T9/v8A/8Gbp4+gwXoFryXMB2qgwoMMHyKEqA5fxX322FG8tzBcRnMW/zlulPbRncmQGidKjMjyYsOSKEF2FBlJQMCbOHP6c9iSZs+UnGYCdbnSo1CZI5F64kn0p1KnTH02nSoV3dGTV7FFHVqVq1dtWcMmVQZTbNGu72zqXMuW7danVL+6e4t1bEy6MeueBYLXrNO5Ze36jQtWsOG97wIj1vt3St/DjTEORss4nNq2mDP3e7w4r1bFkSET5hy6s2TRlD2/mSxXtSHQhCunXo26NevCpmvD/UU6tuullzULH76q92zdZG/Ltv1a+W+osI/nRmyc+fRi1Xdbh+68+0vv10dH3+77KD/i6IdnX669/frn5Zsjh4/2PXju8+8bzc9/6fj27LFnX11/+IUnXWl7BJfegm79FyB9JOl3oHgSklefgxAC+FmFGpqHIYcCfkhgfCohSKKJVo044YUMttggiBkmp6KFXw1oII24oYhjiDByaKOOHcp3Y5BD/njikSkO+eBREQAAOw==",
+                "CLEAR_BACKGROUND_COLOR": "lightgray",
+                "NODE_TITLE_COLOR": "#222",
+                "NODE_SELECTED_TITLE_COLOR": "#000",
+                "NODE_TEXT_SIZE": 14,
+                "NODE_TEXT_COLOR": "#444",
+                "NODE_SUBTEXT_SIZE": 12,
+                "NODE_DEFAULT_COLOR": "#F7F7F7",
+                "NODE_DEFAULT_BGCOLOR": "#F5F5F5",
+                "NODE_DEFAULT_BOXCOLOR": "#CCC",
+                "NODE_DEFAULT_SHAPE": "box",
+                "NODE_BOX_OUTLINE_COLOR": "#000",
+                "DEFAULT_SHADOW_COLOR": "rgba(0,0,0,0.1)",
+                "DEFAULT_GROUP_FONT": 24,
+                "WIDGET_BGCOLOR": "#D4D4D4",
+                "WIDGET_OUTLINE_COLOR": "#999",
+                "WIDGET_TEXT_COLOR": "#222",
+                "WIDGET_SECONDARY_TEXT_COLOR": "#555",
+                "LINK_COLOR": "#4CAF50",
+                "EVENT_LINK_COLOR": "#FF9800",
+                "CONNECTING_LINK_COLOR": "#2196F3"
+            },
+            "comfy_base": {
+                "fg-color": "#222",
+                "bg-color": "#DDD",
+                "comfy-menu-bg": "#F5F5F5",
+                "comfy-input-bg": "#C9C9C9",
+                "input-text": "#222",
+                "descrip-text": "#444",
+                "drag-text": "#555",
+                "error-text": "#F44336",
+                "border-color": "#888",
+                "tr-even-bg-color": "#f9f9f9",
+                "tr-odd-bg-color": "#fff"
+            }
+        }
+    },
+    "solarized": {
+        "id": "solarized",
+        "name": "Solarized",
+        "colors": {
+            "node_slot": {
+                "CLIP": "#2AB7CA",
+                "CLIP_VISION": "#6c71c4",
+                "CLIP_VISION_OUTPUT": "#859900",
+                "CONDITIONING": "#d33682",
+                "CONTROL_NET": "#d1ffd7",
+                "IMAGE": "#5940bb",
+                "LATENT": "#268bd2",
+                "MASK": "#CCC9E7",
+                "MODEL": "#dc322f",
+                "STYLE_MODEL": "#1a998a",
+                "UPSCALE_MODEL": "#054A29",
+                "VAE": "#facfad"
+            },
+            "litegraph_base": {
+                "NODE_TITLE_COLOR": "#fdf6e3",
+                "NODE_SELECTED_TITLE_COLOR": "#A9D400",
+                "NODE_TEXT_SIZE": 14,
+                "NODE_TEXT_COLOR": "#657b83",
+                "NODE_SUBTEXT_SIZE": 12,
+                "NODE_DEFAULT_COLOR": "#094656",
+                "NODE_DEFAULT_BGCOLOR": "#073642",
+                "NODE_DEFAULT_BOXCOLOR": "#839496",
+                "NODE_DEFAULT_SHAPE": "box",
+                "NODE_BOX_OUTLINE_COLOR": "#fdf6e3",
+                "DEFAULT_SHADOW_COLOR": "rgba(0,0,0,0.5)",
+                "DEFAULT_GROUP_FONT": 24,
+                "WIDGET_BGCOLOR": "#002b36",
+                "WIDGET_OUTLINE_COLOR": "#839496",
+                "WIDGET_TEXT_COLOR": "#fdf6e3",
+                "WIDGET_SECONDARY_TEXT_COLOR": "#93a1a1",
+                "LINK_COLOR": "#2aa198",
+                "EVENT_LINK_COLOR": "#268bd2",
+                "CONNECTING_LINK_COLOR": "#859900"
+            },
+            "comfy_base": {
+                "fg-color": "#fdf6e3",
+                "bg-color": "#002b36",
+                "comfy-menu-bg": "#073642",
+                "comfy-input-bg": "#002b36",
+                "input-text": "#93a1a1",
+                "descrip-text": "#586e75",
+                "drag-text": "#839496",
+                "error-text": "#dc322f",
+                "border-color": "#657b83",
+                "tr-even-bg-color": "#002b36",
+                "tr-odd-bg-color": "#073642"
+            }
+        }
+    }
+}
