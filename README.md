@@ -1,6 +1,8 @@
 # ComfyGallery
 A light-weight browser based gallery for ComfyUI
 
+<img width="400" src="https://i.postimg.cc/2y3MgtfH/Screenshot-2023-08-09-105327.png">
+
 ## Launch Arguments
  - `--no-browser`: Do not launch system browser when the server launches.
  - `--purge-cache`: Delete the image gallery cache on startup.
