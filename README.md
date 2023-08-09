@@ -23,4 +23,5 @@ pause
 
 ## Notes
 
-If you're running ComfyGallery from outside ComfyUI you'll need to provide the ComfyUI root directory to it with the `--comfyui-path` launch argument. 
+ - If you're running ComfyGallery from outside ComfyUI you'll need to provide the ComfyUI root directory to it with the `--comfyui-path` launch argument. 
+ - Slow searching? The more images you have, the slower searching will be, as it's a sequential process. 
