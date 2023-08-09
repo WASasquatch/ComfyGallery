@@ -1730,8 +1730,22 @@ if __name__ == "__main__":
                 }
             }
 
+            // PAGE NAVIGATION
 
-            
+            function pageNavigation() {
+                var hash = window.location.hash;
+                var className = decodeURIComponent(hash.replace('#', ''));
+
+                if (className == 'home') {
+                    var categories = [''' + ",".join('"' + os.path.basename(path) + '"' for path in IMAGE_PATHS) + '''];
+                    generateImageGallery(categories);
+                    return null;
+                }
+
+            }
+
+            window.addEventListener('hashchange', pageNavigation);
+
             if ( window.location.hash === '' || window.location.hash ==='#home' ) {
                 var categories = [''' + ",".join('"' + os.path.basename(path) + '"' for path in IMAGE_PATHS) + '''];
                 generateImageGallery(categories);
