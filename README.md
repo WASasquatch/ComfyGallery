@@ -3,13 +3,6 @@ A light-weight browser based gallery for ComfyUI
 
 <img width="400" src="https://i.postimg.cc/2y3MgtfH/Screenshot-2023-08-09-105327.png">
 
-## Launch Arguments
- - `--no-browser`: Do not launch system browser when the server launches.
- - `--purge-cache`: Delete the image gallery cache on startup.
- - `--image-paths`: A list of additional image paths for ComfyGallery to manage.
- - `--comfyui-path`: Path to ComfyUI root directory.
- - `--comfyui-color-palette`: Path to a ComfyUI colorPalette.js file
-
 ## Features
 
  - Browse ComfyUI `input` and `output` directories.
@@ -32,3 +25,11 @@ pause
 
  - If you're running ComfyGallery from outside ComfyUI you'll need to provide the ComfyUI root directory to it with the `--comfyui-path` launch argument. 
  - Slow searching? The more images you have, the slower searching will be, as it's a sequential process. 
+
+## Launch Arguments
+ - `--no-browser`: Do not launch system browser when the server launches.
+ - `--purge-cache`: Delete the image gallery cache on startup.
+ - `--image-paths`: A list of additional image paths for ComfyGallery to manage.
+ - `--comfyui-path`: Path to ComfyUI root directory.
+ - `--comfyui-color-palette`: Path to a ComfyUI colorPalette.js file
+
