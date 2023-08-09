@@ -8,7 +8,7 @@ A light-weight browser based gallery for ComfyUI
  - Browse ComfyUI `input` and `output` directories.
  - Add custom image directories to browse.
  - Delete images
- - Search images by filename or workflow data.
+ - Search images by filename or workflow data within *PNG* images.
 
 ## Installation
 
