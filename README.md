@@ -14,6 +14,13 @@ A light-weight browser based gallery for ComfyUI
 
 Clone the project to a location of your choosing. You can move comfy_gallery.py to the root of your ComfyUI if you'd like, or run it from where it's at. 
 
+Exmaple Launch Bat:
+```batch
+.\python_embeded\python.exe -s ComfyUI\comfy_gallery.py
+
+pause
+```
+
 ## Notes
 
 If you're running ComfyGallery from outside ComfyUI you'll need to provide the ComfyUI root directory to it with the `--comfyui-path` launch argument. 
