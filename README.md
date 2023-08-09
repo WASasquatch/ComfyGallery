@@ -6,7 +6,7 @@ A light-weight browser based gallery for ComfyUI
 ## Features
 
  - Browse ComfyUI `input` and `output` directories.
- - Add custom image direcotries to browse.
+ - Add custom image directories to browse.
  - Delete images
  - Search images by filename or workflow data.
 
