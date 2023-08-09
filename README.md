@@ -10,6 +10,13 @@ A light-weight browser based gallery for ComfyUI
  - `--comfyui-path`: Path to ComfyUI root directory.
  - `--comfyui-color-palette`: Path to a ComfyUI colorPalette.js file
 
+## Features
+
+ - Browse ComfyUI `input` and `output` directories.
+ - Add custom image direcotries to browse.
+ - Delete images
+ - Search images by filename or workflow data.
+
 ## Installation
 
 Clone the project to a location of your choosing. You can move comfy_gallery.py to the root of your ComfyUI if you'd like, or run it from where it's at. 
