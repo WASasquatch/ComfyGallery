@@ -10,7 +10,7 @@ import shutil
 import sys
 import urllib
 from datetime import datetime
-from PIL import Image
+from PIL import Image, PngImagePlugin
 
 import importlib
 import requests
@@ -390,9 +390,17 @@ async def get_workflow(request):
     category = urllib.parse.unquote(category) if category else None
     path = urllib.parse.unquote(path) if path else None
     full_path = get_full_path(category, path)
+    
     image = Image.open(full_path)
-    workflow = image.text['workflow'] if image.text['workflow'] else {}
-    return web.Response(text=json.dumps(workflow, indent=4), content_type='application/json')
+    
+    workflow = {}
+    
+    if hasattr(image, 'text'):
+        if 'workflow' in image.text:
+            workflow = json.loads(image.text['workflow'])
+
+    return web.Response(text=json.dumps(workflow, indent=4), content_type='text/plain')
+
         
     
 # GET FAV ICON SVG
@@ -1646,6 +1654,7 @@ if __name__ == "__main__":
                             throw new Error("Could not retrieve workflow from: "+path);
                         })
                         .then(data => {
+                            let dataString = JSON.stringify(data);
                             e.target.classList.add('active');
                             setTimeout(function() {
                                 e.target.classList.remove('active');
@@ -1655,14 +1664,16 @@ if __name__ == "__main__":
                             selBox.style.left = '0';
                             selBox.style.top = '0';
                             selBox.style.opacity = '0';
-                            selBox.value = data;
+                            selBox.value = dataString;
                             document.body.appendChild(selBox);
                             selBox.focus();
                             selBox.select();
                             document.execCommand('copy');
                             document.body.removeChild(selBox);
+                            console.log("Workflow for " + path + " copied.")
                         })
                         .catch(error => {
+                            console.log("Unable to copy workflow for ' + path + '.")
                             console.error(error);
                             return false;
                         });  
