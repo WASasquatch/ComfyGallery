@@ -1,7 +1,7 @@
 # ComfyGallery
 A light-weight browser based gallery for ComfyUI
 
-<img width="400" src="https://i.postimg.cc/2y3MgtfH/Screenshot-2023-08-09-105327.png">
+[<img width="400" src="https://i.postimg.cc/2y3MgtfH/Screenshot-2023-08-09-105327.png">](https://i.postimg.cc/2y3MgtfH/Screenshot-2023-08-09-105327.png)
 
 ## Features
 
