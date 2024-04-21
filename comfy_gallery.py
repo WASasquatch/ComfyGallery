@@ -416,7 +416,11 @@ async def index(request):
 if __name__ == "__main__":
 
     # Startup
-    window_title(TITLE)
+    try:
+        window_title(TITLE)
+    except AttributeError as e:
+        pass
+    
     cstr("Starting ComfyUI Gallery ...").msg.print()
        
     # CLI Arguments
